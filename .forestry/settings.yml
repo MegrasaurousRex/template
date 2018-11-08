@@ -15,3 +15,8 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 version: '0.50'
+
+build:
+  preview_command: hugo
+  publish_command: env HUGO_ENV=production hugo --minify
+  output_directory: docs
