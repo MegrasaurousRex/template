@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+{{ partial "head.html" . }}
+
+</head>
+
+<body class="{{ .Params.class }}">
+
+{{ block "SITE" . }}{{ end }}
+
+{{ partialCached "defer.html" . }}
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Template and CMS testing",
+  "main": "index.js",
+  "author": "dmbdesignpdx <daniel@danielblake.design>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+   "test": "webpack --mode development",
+   "dev": "webpack --mode development --watch",
+   "build": "webpack --mode production"
+  },
+  "devDependencies": {
+   "@babel/core": "^7.0.0",
+   "@babel/preset-env": "^7.0.0",
+   "babel-loader": "^8.0.2",
+   "browser-sync": "^2.23.6",
+   "eslint": "^5.7.0",
+   "turntable-kit": "^0.7.0",
+   "webpack": "^4.17.2",
+   "webpack-cli": "^3.1.0"
+  }
+}

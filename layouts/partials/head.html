@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+
+
+<!-- General -->
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+
+<title>{{ .Title }}</title>
+
+<meta name="description" content="{{ .Description }}">
+
+
+<!-- Critical Styles -->
+
+{{ $critical := resources.Get "critical/_site.scss" | toCSS | minify | fingerprint }}
+<style>{{ $critical.Content | safeCSS }}</style>

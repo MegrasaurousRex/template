@@ -1,0 +1,21 @@
+{{ define "SITE" }}
+
+<header id="hero">
+
+   <h1>{{ .Params.one }}</h1>
+
+</header>
+
+<main>
+
+   <article>
+
+      <h2>{{ .Params.two }}</h2>
+
+      {{ .Content }}
+
+   </article>
+
+</main>
+
+{{ end }}

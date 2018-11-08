@@ -1,0 +1,10 @@
+<div>
+
+   <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,700" rel="stylesheet">
+   
+   {{ $master := resources.Get "css/master.scss" | toCSS | minify }}
+   <link rel="stylesheet" href="{{ $master.RelPermalink }}">
+   
+   <!-- <script defer src="/dist/main.min.js"></script> -->
+
+</div>
